@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="elevator.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/elevator.jpeg">
+    <title>ELEVATOR</title>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+
+            <!-- 2nd Level Lift Section  -->
+            <div class="container-btn">
+                <div class="lift-button">
+                    <div class="icon">
+                        <div onClick="move('DOWN', 2)" class="shape shape-down" id="button-down-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="lift" id="lift-level-2">
+                    <div class="level-header">Level 2</div>
+                </div>
+            </div>
+
+            <!-- 1st Level Lift Section -->
+            <div class="container-btn">
+                <div class="lift-button h-30">
+                    <div class="icon">
+                        <div onClick="move('UP', 1)" class="shape shape-up" id="button-up-1">
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div onClick="move('DOWN', 1)" class="shape shape-down" id="button-down-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="lift" id="lift-level-1">
+                    <div class="level-header">Level 1</div>
+                </div>
+            </div>
+
+            <!-- 0th Level Lift Section -->
+            <div class="container-btn">
+                <div class="lift-button">
+                    <div class="icon">
+                        <div onClick="move('UP', 0)" class="shape shape-up" id="button-up-0">
+                        </div>
+                    </div>
+                </div>
+                <div class="lift" id="lift-level-0">
+                    <div class="level-header">Level 0 / GL</div>
+                    <div id="lift-main" class="lift-main">
+                        <div class="lift-box">Elevator</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <div><audio src="assets/sound.mp3" id = "lift-audio"></audio></div>
+    <script type="application/javascript" src="elevator.js"></script>
+</body>
+
+</html>

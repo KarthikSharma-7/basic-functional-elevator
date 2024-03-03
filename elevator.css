@@ -1,0 +1,143 @@
+body{
+    background-color: beige;
+}
+
+main {
+    display: flex;
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.icon {
+    position: relative;
+    top: 10%;
+    width: 80px;
+    height: 30vh;
+    cursor: pointer;
+}
+
+.shape {
+    position: absolute;
+    top: 1.6rem;
+    width: 90%;
+    height: 0.75rem;
+    background-color: grey;
+}
+
+.shape-up {
+    transform: rotate(-90deg);
+}
+
+.shape-down {
+    transform: rotate(90deg);
+}
+
+#button-down-2,
+#button-up-0 {
+    margin-top: 40%;
+}
+
+.shape::after,
+.shape::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 0.75rem;
+    right: -0.5rem;
+    background-color: grey;
+}
+
+.shape::after {
+    top: -0.75rem;
+    transform: rotate(45deg);
+}
+
+.shape::before {
+    top: 0.75rem;
+    transform: rotate(-45deg);
+}
+
+.lift {
+    background-image: url("./assets/bcg.jpg");
+    background-repeat: no-repeat;
+    border: solid 2px black;
+    width: 70vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+
+.lift-button {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 30%;
+}
+
+.lift {
+    width: 30vw;
+}
+
+.lift-button {
+    width: 20%;
+}
+
+.container-btn {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.h-30 {
+    height: 30vh;
+}
+
+.lift-main {
+    height: 160px;
+    min-width: 25vw;
+    max-width: 50vw;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, rgb(196, 158, 158), rgb(209, 98, 43));
+    position: relative;
+}
+
+.lift-box {
+    background-color: #f1c27d;
+    color: black;
+    border: 2px solid orange;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 10px orange;
+    text-align: center;
+}
+
+.lift-transition {
+    transition: all 5s;
+    transition-timing-function: linear;
+}
+
+.level-header {
+    width: fit-content;
+    align-self: center;
+    border: solid 2px;
+    border-top: none;
+    padding: 0 1rem;
+    z-index: 100;
+}
