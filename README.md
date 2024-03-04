@@ -17,3 +17,5 @@
 
 1. Simply interact with the UP/DOWN buttons on each floor to simulate elevator movement.
 2. Audio feedback provides a realistic touch to the elevator experience.
+
+![Elevator Web Page](https://github.com/KarthikSharma-7/basic-functional-elevator/assets/84434593/661e66b1-8d20-4a0a-baef-5053d6621a41)
